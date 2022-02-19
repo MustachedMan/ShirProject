@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Reviews</title>
+    <link rel="stylesheet" href="StyleReviews.css">
+    <link rel="stylesheet" href="../StyleAll.css">
+
+
+    <script>
+        function rate(star1, star2, star3, star4, star5, value) {
+            if (value === "0") {
+                star1.style.color = 'black';
+                star2.style.color = 'black';
+                star3.style.color = 'black';
+                star4.style.color = 'black';
+                star5.style.color = 'black';
+            }
+            if (value === "1")
+                star1.style.color = 'yellow';
+            if (value === "2") {
+                star1.style.color = 'yellow';
+                star2.style.color = 'yellow';
+            }
+            if (value === "3") {
+                star1.style.color = 'yellow';
+                star2.style.color = 'yellow';
+                star3.style.color = 'yellow';
+            }
+            if (value === "4") {
+                star1.style.color = 'yellow';
+                star2.style.color = 'yellow';
+                star3.style.color = 'yellow';
+                star4.style.color = 'yellow';
+            }
+            if (value === "5") {
+                star1.style.color = 'yellow';
+                star2.style.color = 'yellow';
+                star3.style.color = 'yellow';
+                star4.style.color = 'yellow';
+                star5.style.color = 'yellow';
+            }
+        }
+    </script>
+</head>
+
+<body class="biggerBody">
+    <center>
+        <div class="biggerAll">
+            <div class="title">ביקורות</div>
+            <div class="link">
+                <a href="#myReview" class="nearTitle">לחץ כאן כדי לכתוב את הביקורת שלך</a>
+            </div>
+            <div class="note">
+                <p class="name"><b>ישראל לוי</b><span class="date"> / יוני 1999 <br /></span><span class="icon" id="s1I">★</span><span class="icon" id="s2I">★</span><span class="icon" id="s3I">★</span><span class="icon" id="s4I">★</span><span class="icon" id="s5I">★</span><span><ins class="stars" onclick="rate(s1I, s2I, s3I, s4I, s5I,'5');">ראה דירוג</ins></span><img class="man" src="man.png" /></p>
+                <div class="review">.סרט מגניב ויפה למשפחה עם צחוקים שמבריאים את הנשמה לחוויה טובה</div>
+            </div>
+            <div class="note">
+                <p class="name"><b>גיא פרץ</b><span class="date"> / מאי 2015 <br /></span><span class="icon" id="s1G">★</span><span class="icon" id="s2G">★</span><span class="icon" id="s3G">★</span><span class="icon" id="s4G">★</span><span class="icon" id="s5G">★</span><span><ins class="stars" onclick="rate(s1G, s2G, s3G, s4G, s5G,'1');">ראה דירוג</ins></span><img class="man" src="man.png" /></p>
+                <div class="review">.הטקסטים והמשחק לא מבדרים ועוד חבל שמעלים את הסרט מתהום השיכחה</div>
+            </div>
+            <div class="note">
+                <p class="name"><b>דניאל כץ</b><span class="date"> / ינואר 2016 <br /></span><span class="icon" id="s1D">★</span><span class="icon" id="s2D">★</span><span class="icon" id="s3D">★</span><span class="icon" id="s4D">★</span><span class="icon" id="s5D">★</span><span><ins class="stars" onclick="rate(s1D, s2D, s3D, s4D, s5D,'3');">ראה דירוג</ins></span><img class="man" src="man.png" /></p>
+                <div class="review">.סרט נחמד ולא יותר מזה</div>
+            </div>
+
+            <div class="note">
+                <div id="myReview">
+                    <p>
+                        <div class="name" id="myReviewTitle"><b>הביקורת שלי</b></div>
+                        <br /><label for="numStars">?"כמה כוכבים אתם נותנים לסרט "חגיגה בסנוקר</label>
+                        <br /><span class="icon" id="s1You">★</span><span class="icon" id="s2You">★</span><span class="icon" id="s3You">★</span><span class="icon" id="s4You">★</span><span class="icon" id="s5You">★</span>
+                        <button id="clear" onclick="rate(s1You, s2You, s3You, s4You, s5You,'0');">נקה כוכבים</button>
+                        5<input type="radio" name="numStars" onclick="rate(s1You, s2You, s3You, s4You, s5You,'5');" />
+                        4<input type="radio" name="numStars" onclick="rate(s1You, s2You, s3You, s4You, s5You,'4');" />
+                        3<input type="radio" name="numStars" onclick="rate(s1You, s2You, s3You, s4You, s5You,'3');" />
+                        2<input type="radio" name="numStars" onclick="rate(s1You, s2You, s3You, s4You, s5You,'2');" />
+                        1<input type="radio" name="numStars" onclick="rate(s1You, s2You, s3You, s4You, s5You,'1');" />
+                    </p>
+                    <textarea> </textarea> :הערות
+                </div>
+            </div>
+
+            <button class="button" id="buttonReviews" onclick="window.location.href='../Home/Home.html'">חזרה לדף הבית</button>
+        </div>
+    </center>
+</body>
+</html>

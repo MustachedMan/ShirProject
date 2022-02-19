@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="StyleSignUp.css">
+    <link rel="stylesheet" href="../StyleAll.css">
+
+    <script>
+        function check() {
+
+            event.preventDefault()
+
+            if (name1.value.length < 2) {
+                nameWarn.style.color = "red";
+                return false;
+            }
+
+            if (passward.value.length < 3) {
+                passwardWarn.style.color = "red";
+                return false;
+            }
+
+            if (passward.value != checkedPassward.value) {
+                notEqualWarn.style.color = "red";
+                return false;
+            }
+
+            if (document.getElementById("name1").value.length >= 2 && document.getElementById("passward").value.length >= 3 && document.getElementById("passward").value == document.getElementById("checkedPassward").value)
+                alert("תגובתך נרשמה, חזור אל דף הבית");
+
+        }
+    </script>
+</head>
+<body class="biggerBody">
+    <center>
+        <div class="biggerAll" id="SignUpPage">
+            <div class="title">הרשמה למנוי</div>
+            <p class="instruction">
+                .ענו על סעיפי הטופס שלפניכם במידה ואתם מעוניינים לרכוש מנוי לסרט * <br /> .- כדי לבטל את תשובותכם בסעיפי הטופס לחצו על הכפתור - אפס  **
+            </p>
+            <form class="p" id="questions" onsubmit="return check();">
+
+                <div id="right">
+                    <input class="space" type="text" id="name1" required />
+                    <label for="name1">:שם פרטי + משפחה</label>
+                    <br />
+
+                    <input class="space" type="text" id="username" />
+                    <label for="username">:שם משתמש</label>
+                    <br />
+
+                    <input class="space" type="password" id="passward" required />
+                    <label for="passward">:סיסמה</label>
+                    <br />
+
+                    <input class="space" type="password" id="checkedPassward" required />
+                    <label for="checkedPassward">:אימות סיסמה</label>
+                    <br />
+
+                    <label for="other">:מגדר</label>
+                    <br />זכר<input name="gender" type="radio" onclick="other.hidden=true" />
+                    <br />נקבה<input name="gender" type="radio" onclick="other.hidden=true" />
+                    <br /><input name="other" type="text" id="other" hidden />
+                    אחר<input class="space" name="gender" type="radio" onclick="other.hidden=false" />
+                    <br />
+
+                    <input class="space" type="email" id="email" required />
+                    <label for="email">:אימייל</label>
+                    <br />
+
+                    <input class="space" id="birth" type="date" />
+                    <label for="birth">:תאריך לידה</label>
+                    <br />
+                </div>
+
+                <div id="left">
+
+                    <div id="nameWarn" class="warns">*השם המלא שלך צריך להיות בעל לפחות 2 תווים*</div>
+                    <br />
+
+                    <div id="biggerSpace"></div>
+
+                    <div id="passwardWarn" class="warns">*הסיסמה צריכה להיות בעלת לפחות 3 תווים*</div>
+                    <br />
+
+                    <div id="notEqualWarn" class="warns">*הסיסמה ואימות הסיסמה אינם זהים*</div>
+                    <br />
+
+                    <input class="space" type="number" id="month" min="1" max="12" />
+                    <label for="month">:מס' חודשי מנוי</label>
+                    <br />
+
+                    <select id="city" class="space">
+                        <option>עכו</option>
+                        <option>אילת</option>
+                        <option>תל אביב</option>
+                        <option>ראשון לציון</option>
+                        <option>חיפה</option>
+                        <option>אשקלון</option>
+                        <option>רעננה</option>
+                    </select>
+                    <label for="city">:עיר</label>
+                    <br />
+
+                    <label for="include">?מה היית רוצה שיכלל במנוי</label>
+                    <br />"צפייה חינם בסרט "חגיגה בסנוקר<input name="include" type="radio" />
+                    <br />כיבוד ואוכל לצופי הסרט - בתוספת תשלום<input name="include" type="radio" />
+                    <br />"גישה למועדון חברי "חגיגה בסנוקר<input class="space" name="include" type="radio" />
+                    <br />
+
+                    <textarea id="long"> </textarea>
+                    <label for="long" class="space">:דברים נוספים שהיית רוצה לציין</label>
+                    <br />
+                    <center>
+                        <div id="twoButtons">
+                            <button class="buttonForm" type="submit"> שלח </button>
+                            <button class="buttonForm" type="reset">אפס</button>
+                        </div>
+                    </center>
+                </div>
+
+            </form>
+            <button class="button buttonPages" onclick="window.location.href='../Home/Home.html'">חזרה לדף הבית</button>
+        </div>
+    </center>
+</body>
+</html>

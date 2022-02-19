@@ -1,0 +1,38 @@
+﻿.actorsList {
+    table-layout: fixed;
+    width: 90%;
+    border: 2px solid black;
+    font-family: myFont;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.row {
+    border: 2px solid black;
+    padding: 15px;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+.boys {
+    background-color: #abcfd1;
+}
+
+.girls {
+    background-color: #dbb7b6;
+}
+
+.imgActor {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.tableTitle {
+    background-color: #c1aed6;
+}
+
+.vikiName{
+    color: blue;
+}

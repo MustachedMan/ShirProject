@@ -1,0 +1,11 @@
+﻿.quotes {
+    font-family: myFont;
+    font-size: 40px;
+    text-align: right;
+    margin-right: 50px;
+    color: purple;
+}
+
+#buttonQuotes {
+    margin-top: 60px;
+}

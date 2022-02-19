@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Quotes</title>
+    <link rel="stylesheet" href="StyleQuotes.css">
+    <link rel="stylesheet" href="../StyleAll.css">
+
+    <script>
+        function sentence1() {
+            ktzitza.hidden = false;
+            tzadik.hidden = true;
+            avadetem.hidden = true;
+            yamshich.hidden = true;
+            kevodo.hidden = true;
+            azri.hidden = true;
+        }
+
+        function sentence2() {
+            ktzitza.hidden = true;
+            tzadik.hidden = false;
+            avadetem.hidden = true;
+            yamshich.hidden = true;
+            kevodo.hidden = true;
+            azri.hidden = true;
+        }
+
+        function sentence3() {
+            ktzitza.hidden = true;
+            tzadik.hidden = true;
+            avadetem.hidden = false;
+            yamshich.hidden = true;
+            kevodo.hidden = true;
+            azri.hidden = true;
+        }
+
+        function sentence4() {
+            ktzitza.hidden = true;
+            tzadik.hidden = true;
+            avadetem.hidden = true;
+            yamshich.hidden = false;
+            kevodo.hidden = true;
+            azri.hidden = true;
+        }
+
+        function sentence5() {
+            ktzitza.hidden = true;
+            tzadik.hidden = true;
+            avadetem.hidden = true;
+            yamshich.hidden = true;
+            kevodo.hidden = false;
+            azri.hidden = true;
+        }
+
+        function sentence6() {
+            ktzitza.hidden = true;
+            tzadik.hidden = true;
+            avadetem.hidden = true;
+            yamshich.hidden = true;
+            kevodo.hidden = true;
+            azri.hidden = false;
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <div class="All">
+            <div class="title">משפטים מוכרים</div>
+            <p class="instruction">
+                .כדי לשמוע את המשפט נאמר בסרט, לחצו עליו ולאחר מכן לחצו על האודיו שמתחתיו *
+            </p>
+            <p class="quotes" onclick="sentence1();">
+                "!יא ווארדי, איזה קציצה"
+                <br />
+                <audio controls id="ktzitza" hidden>
+                    <source src="recording/ktzitza.mp3" type="audio/mp3">
+                </audio>
+            </p>
+            <p class="quotes" onclick="sentence2();">
+                "צדיק אורגינל"
+                <br />
+                <audio controls id="tzadik" hidden>
+                    <source src="recording/tzadik.ogg" type="audio/ogg">
+                </audio>
+            </p>
+            <p class="quotes" onclick="sentence3();">
+                "אתם עבדתם עליי"
+                <br />
+                <audio controls id="avadetem" hidden>
+                    <source src="recording/avadetem.ogg" type="audio/ogg">
+                </audio>
+            </p>
+            <p class="quotes" onclick="sentence4();">
+                "...ימשיך כבודו..."
+                <br />
+                <audio controls id="yamshich" hidden>
+                    <source src="recording/yamshich.ogg" type="audio/ogg">
+                </audio>
+            </p>
+            <p class="quotes" onclick="sentence5();">
+                "?מה זה, חכם חנוכה? כבודו שכח לברך"
+                <br />
+                <audio controls id="kevodo" hidden>
+                    <source src="recording/kevodo.ogg" type="audio/ogg">
+                </audio>
+            </p>
+            <p class="quotes" onclick="sentence6();">
+                ".עזרי עזרי... עזרי, החתן עזריאל... הכינוי הוא גברי"
+                <br />
+                <audio controls id="azri" hidden>
+                    <source src="recording/azri.ogg" type="audio/ogg">
+                </audio>
+            </p>
+            <button class="button buttonPages" id="buttonQuotes" onclick="window.location.href = '../Home/Home.html'">חזרה לדף הבית</button>
+        </div>
+    </center>
+</body>
+</html>

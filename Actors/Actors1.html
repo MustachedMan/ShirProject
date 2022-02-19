@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Actors</title>
+    <link rel="stylesheet" href="StyleActors.css">
+    <link rel="stylesheet" href="../StyleAll.css">
+
+    <script>
+        function viki1() {
+            window.location.href = 'https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%91%D7%90%D7%A8%D7%A7%D7%9F';
+        }
+
+        function viki2() {
+            window.location.href = 'https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A6%D7%94_%D7%A9%D7%90%D7%95%D7%9C';
+        }
+
+        function viki3() {
+            window.location.href = 'https://he.wikipedia.org/wiki/%D7%96%D7%90%D7%91_%D7%A8%D7%95%D7%95%D7%97';
+        }
+
+        function viki4() {
+            window.location.href = 'https://he.wikipedia.org/wiki/%D7%98%D7%9C%D7%99%D7%94_%D7%A9%D7%A4%D7%99%D7%A8%D7%90';
+        }
+    </script>
+
+</head>
+<body>
+    <center>
+        <div class="All">
+            <div class="title">שחקנים</div>
+            <p class="instruction">
+                .כדי לדעת עוד על השחקנים שלפניכם, לחצו על שמם והגיעו אל דף הויקיפדיה שלהם *<br /> .כדי להמשיך ולראות שחקנים נוספים, לחצו על כפתור ה - המשך - שבתחתית העמוד * 
+            </p>
+            <table class="actorsList">
+                <tr>
+                    <td class="row tableTitle">הדמות שמשחקת</td>
+                    <td class="row tableTitle">תמונה של השחקנית בסרט</td>
+                    <td class="row tableTitle">שם השחקנית</td>
+                    <td class="row tableTitle">הדמות שמשחק</td>
+                    <td class="row tableTitle">תמונה של השחקן בסרט</td>
+                    <td class="row tableTitle">שם השחקן</td>
+                </tr>
+                <tr>
+                    <td class="row girls">יונה שמש, בת הרב</td>
+                    <td class="row girls"><img class="imgActor" src="images/nitza.jfif" /></td>
+                    <td class="row girls vikiName" onclick="viki2();"><ins>ניצה שאול</ins></td>
+                    <td class="row boys">גבריאל (גברי) לוי / עזריאל לוי</td>
+                    <td class="row boys"><img class="imgActor" src="images/yehuda.jpg" /></td>
+                    <td class="row boys vikiName" onclick="viki1();"><ins>יהודה בארקן</ins></td>
+                </tr>
+                <tr>
+                    <td class="row girls">ריקי המלצרית</td>
+                    <td class="row girls"><img class="imgActor" src="images/talia.png" /></td>
+                    <td class="row girls vikiName" onclick="viki4();"><ins>טליה שפירא</ins></td>
+                    <td class="row boys">חכם חנוכה</td>
+                    <td class="row boys"><img class="imgActor" src="images/zeev.jpg" /></td>
+                    <td class="row boys vikiName" onclick="viki3();"><ins>זאב רווח</ins></td>
+                </tr>
+            </table>
+            <button class="buttonPages" onclick="window.location.href='../Home/index.html'">חזרה לדף הבית</button>
+            <button class="buttonPages" onclick="window.location.href='Actors2.html'">- המשך -</button>
+        </div>
+    </center>
+</body>
+</html>

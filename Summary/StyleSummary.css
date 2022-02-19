@@ -1,0 +1,32 @@
+﻿#imgT {
+    height: 100px;
+    width: 100px;
+    float:right;
+    margin-right: 250px;
+    margin-top: -120px;
+}
+
+#summary {
+    font-family: myFont;
+    font-size: 35px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+#snukerCover {
+    height: 480px;
+    width: 400px;
+    float: left;
+    margin-top: -625px;
+}
+
+#lastP {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 50px;
+    text-align: right;
+}
+
+#buttonSummary {
+    margin-top: -30px;
+}

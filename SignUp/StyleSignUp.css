@@ -1,0 +1,54 @@
+﻿input[name="gender"] {
+    margin-right: 20px;
+}
+
+.buttonForm {
+    width: 150px;
+    height: 50px;
+    position: static;
+    border: 2px solid black;
+    font-family: myFont;
+    font-size: 35px;
+    background-color: pink;
+    outline-width: thick;
+    margin: 10px;
+}
+
+.warns {
+    font-size: 25px;
+    color: blue;
+}
+
+#formTable {
+    border: none;
+    width: 1000px;
+    margin-left: -450px;
+    position: static;
+}
+
+input[name="include"] {
+    margin-right: 20px;
+}
+
+.space{
+    margin-bottom: 30px;
+}
+
+#left{
+    margin-right: 450px;
+    margin-left: -400px;
+    margin-top: -480px;
+}
+
+#right{
+    margin-right: 40px;
+}
+
+#twoButtons{
+    margin-top: 60px;
+    margin-left: 420px;
+}
+
+#biggerSpace {
+    margin-bottom: 60px;
+}
